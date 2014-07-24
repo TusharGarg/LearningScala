@@ -8,11 +8,11 @@ def map[U](list : Seq[Int], transform :Int => U ) : Seq[U] = {
   while(listIterator.hasNext) {
     x +=  transform(listIterator.next())
   }
-
-  x.toSeq
-
+  x
 }
 
 var buff = ArrayBuffer.empty[Int]
 buff += 3
 buff += 4
+
+map(buff, {value : Int => value + 1})
