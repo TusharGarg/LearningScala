@@ -10,7 +10,7 @@ class Person(age:Int, isFemale:Boolean) {
 
 
 val person = new Person(20, false);
-person.canMarry(age => age>10)
+person.canMarry(_>10)
 
 val person2 = new Person(22, true);
 person2.canMarry(NcrCanDrink)
